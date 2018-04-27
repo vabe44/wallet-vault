@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            <i class="cc {{ wallet.type }}"></i>
+            {{ wallet.type }}
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <h2 text-center>{{ wallet.name }}</h2>
+    <div class="qr-code" text-center>
+        <ngx-kjua [text]="wallet.address"></ngx-kjua>
+    </div>
+
+    <h5>Type:</h5>
+    <p>{{ wallet.type }}</p>
+    <h5>Description:</h5>
+    <p>adadasdsadasdasdasdaskdjasdaskldaklsjdhjaklhdajklhdkasjlhdkasj sjdaskjdajksdghlkasjhd klhjkas dkjlad kjaldh ask dhkjlhaskljdaskj dsjal dsjka dsjka dklsja</p>
+</ion-content>
