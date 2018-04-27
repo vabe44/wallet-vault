@@ -3,4 +3,5 @@ export interface Wallet {
     type: string;
     name: string;
     address: string;
+    description: string;
 }
